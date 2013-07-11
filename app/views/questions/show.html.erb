@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Favorite question:</b>
+  <%= @question.favorite_question %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @question.comment %>
+</p>
+
+<p>
+  <b>Submitted on:</b>
+  <%= @question.submitted_on %>
+</p>
+
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>
